@@ -1,27 +1,190 @@
 @import './variables';
 @import 'bootstrap/scss/bootstrap';
 
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 1.65rem;
+}
+
+h2, h3, h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
 #hero {
-	background:
-		linear-gradient(90deg, #22222280 0%, #22222280 100%),
-		url('/hero-bg.jpg');
+	background: url('/trees-path.png');
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
-	color: $white;
-	font-family: 'Poppins', sans-serif;
-	font-weight: bold;
+	color: white;
+	// height: 40rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.cta-box {
+		background: linear-gradient(#6F6E67d2 0%, #6f6e67d2 100%);
+		position: relative;
+
+		.cta-btn {
+			width: 8rem;
+			height: 2.5rem;
+			border: none;
+			border-radius: 10rem;
+			background-color: #CC0000;
+			color: white;
+			font-weight: 500;
+		}
+
+		.trees {
+			position: absolute;
+			right: 1rem;
+			bottom: 0.3rem;
+			height: 5rem;
+		}
+	}
 }
 
 .usp {
 	display: flex;
-	flex-direction: column;
 
 	.content {
 		background-color: $gray-msb-20;
 		border-left: 0.5rem $red-msb solid;
-		padding: 1rem;
 		flex-grow: 1;
-		font-family: 'Open Sans', sans-serif;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 3rem 0 1rem;
+		position: relative;
+
+		.text {
+			font-size: smaller;
+			display: flex;
+		}
+
+		img {
+			max-width: 20%;
+			min-width: 100px;
+			height: auto;
+			object-fit: contain;
+			margin: 0 0 0 1rem;
+			align-self: flex-end;
+			bottom: 0;
+		}
+
+		.trophy {
+			align-self: flex-start;
+		}
+
+		.fa-arrow-right {
+			color: #CC0000;
+			font-size: 1.5rem;
+			position: absolute;
+			right: 1rem;
+			bottom: 0.7rem;
+		}
+	}
+
+	.reverse-content {
+		h3 {
+			margin-left: 8.15rem;
+		}
+
+		.text {
+			flex-direction: row-reverse;
+		}
+
+		img {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.search-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+
+	#search-input {
+		width: 6rem;
+		height: 2.5rem;
+		border: none;
+		border-radius: 10rem;
+		padding-left: 1rem;
+		background-color: $gray-msb-20;
+	}
+
+	.fa-magnifying-glass {
+		position: absolute;
+		right: 1rem;
+	}
+}
+
+.fa-bars {
+	font-size: 2.5rem;
+	color: $gray-msb
+}
+
+footer {
+	width: 100%;
+	background-color: $gray-msb-20;
+	margin: 2rem 0 0 0;
+	padding: 3rem 1.5rem 1.5rem 1.5rem;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+
+	.content {
+		margin: 0 0 3rem 0;
+
+		a, span {
+			margin: 0 0.7rem 0 0.7rem;
+		}
+	}
+
+	.find a {
+		text-decoration: underline;
+	}
+
+	.footer-brand {
+		align-self: flex-start;
+	}
+}
+
+#about-section {
+	position: relative;
+	padding-top: 4rem;
+
+	#left-vine {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 120px;
+	}
+
+	#right-vine {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 120px;
+	}
+
+	.about-title {
+		text-align: center;
+		margin-bottom: 3rem;
 	}
 }

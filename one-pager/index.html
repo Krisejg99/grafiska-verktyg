@@ -3,21 +3,30 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="icon" type="image/png" href="/trees.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Doge Doggelito</title>
+	<title>MSB</title>
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<div class="container">
+	<nav class="navbar navbar-expand-md">
+		<div class="container px-4 py-2">
 			<a class="navbar-brand" href="#">
-				<img src="/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-center">
-				Doge Doggelito
+				<img src="/msb-logo.png" alt="Logo" height="70" class="d-inline-block">
 			</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+			<div class="search-box">
+				<input type="text" name="search" id="search-input" placeholder="Sök...">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+
+			<i class="fa-solid fa-bars"></i>
+
+			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -29,60 +38,113 @@
 					<a class="nav-link" href="#pricing">Pricing</a>
 					<a class="nav-link disabled" href="#disabled">Disabled</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</nav>
 
 	<main>
 		<section id="hero">
 			<div class="container">
-				<div class="row">
-					<div
-						class="col-md-6 col-lg-8 d-flex flex-column justify-content-center align-items-start order-2 order-md-1">
-						<h1>Doge Doggelito</h1>
-						<p>I codes websites that is pretty</p>
-
-						<a href="mailto:doge@doggelito.se">Mail me</a>
-					</div>
-
-					<div class="col-md-6 col-lg-4 d-flex justify-content-end order-1 order-md-2">
-						<img src="https://place.dog/400/300" alt="cute dog" class="img-fluid">
-					</div>
+				<div class="cta-box p-4 m-4">
+					<h1>Hittat ett träd som är farligt?</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
+						exnatusnihil a consequatur.</p>
+					<button type="button" class="cta-btn btn">Orosanmälan</button>
+					<img src="/trees.png" alt="simple illustration of trees" class="trees">
 				</div>
 			</div>
 		</section>
 
-		<section>
+		<section id="about-section">
+			<img src="/left-vine.png" alt="left-vine" id="left-vine">
+			<img src="/right-vine.png" alt="right-vine" id="right-vine">
+			<h2 class="about-title">Om MSB</h2>
+
 			<div class="container">
 				<div class="row gy-4" id="usps">
-					<div class="usp col-md-6 col-lg-4">
+					<div class="usp col-md-6">
 						<div class="content">
-							<h2>Such dog</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-								numquam.Deleniti quasi amet reiciendis consequatur corrupti numquam nemo, repellendus
-								assumenda,esteius nulla ipsa voluptatibus odit nesciunt laboriosam!</p>
+							<h3>Vi har nöja kunder</h3>
+
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+									numquam.</p>
+
+								<img src="/thumbs-up.png">
+							</div>
+
+							<i class="fa-solid fa-arrow-right"></i>
 						</div>
 					</div>
-					<div class="usp col-md-6 col-lg-4">
-						<div class="content">
-							<h2>Much writer</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-								numquam.Deleniti quasi amet reiciendis consequatur corrupti numquam nemo, repellendus
-								assumenda,esteius nulla ipsa voluptatibus odit nesciunt laboriosam!</p>
+					<div class="usp col-md-6">
+						<div class="content reverse-content">
+							<h3>Ge din åsikt</h3>
+
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+									numquam.</p>
+
+								<img src="/thumbs-down.png">
+							</div>
+
+							<i class="fa-solid fa-arrow-right"></i>
 						</div>
 					</div>
-					<div class="usp col-md-6 col-lg-4">
+					<div class="usp col-md-6">
 						<div class="content">
-							<h2>Very hip</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-								numquam.Deleniti quasi amet reiciendis consequatur corrupti numquam nemo, repellendus
-								assumenda,esteius nulla ipsa voluptatibus odit nesciunt laboriosam!</p>
+							<h3>Sveriges bästa!</h3>
+
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+									numquam.</p>
+
+								<img src="/trophy.png" class="trophy">
+							</div>
+
+							<i class="fa-solid fa-arrow-right"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+
+	<footer>
+		<section class="row">
+			<div class="contact col-md-5 col-lg 3 content">
+				<h3>Kontakta MSB</h3>
+				<span>+1234567890</span>
+				<span>msb@gmail.com</span>
+			</div>
+
+			<div class="find col-md-5 col-lg 3 content">
+				<h3>Hitta MSB</h3>
+				<a href="#">Malmö</a>
+				<a href="#">Göteborg</a>
+				<a href="#">Stockholm</a>
+			</div>
+
+			<div class="social-media col-md-5 col-lg 3 content">
+				<h3>Kontakta MSB</h3>
+				<a href="#">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+		</section>
+
+		<a class="footer-brand" href="#">
+			<img src="/msb-logo.png" alt="Logo" height="70" class="d-inline-block">
+		</a>
+	</footer>
 
 	<script type="module" src="/src/main.ts"></script>
 </body>
