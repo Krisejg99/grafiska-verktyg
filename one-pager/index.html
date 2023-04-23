@@ -43,70 +43,103 @@
 	</nav>
 
 	<main>
-		<section id="hero">
-			<div class="container">
-				<div class="cta-box p-4 m-4">
-					<h1>Hittat ett träd som är farligt?</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
-						exnatusnihil a consequatur.</p>
-					<button type="button" class="cta-btn btn">Orosanmälan</button>
-					<img src="/trees.png" alt="simple illustration of trees" class="trees">
-				</div>
-			</div>
-		</section>
-
-		<section id="about-section">
-			<img src="/left-vine.png" alt="left-vine" id="left-vine">
-			<img src="/right-vine.png" alt="right-vine" id="right-vine">
-			<h2 class="about-title">Om MSB</h2>
-
-			<div class="container">
-				<div class="row gy-4" id="usps">
-					<div class="usp col-md-6">
-						<div class="content">
-							<h3>Vi har nöja kunder</h3>
-
-							<div class="text">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-									numquam.</p>
-
-								<img src="/thumbs-up.png">
-							</div>
-
-							<i class="fa-solid fa-arrow-right"></i>
-						</div>
-					</div>
-					<div class="usp col-md-6">
-						<div class="content reverse-content">
-							<h3>Ge din åsikt</h3>
-
-							<div class="text">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-									numquam.</p>
-
-								<img src="/thumbs-down.png">
-							</div>
-
-							<i class="fa-solid fa-arrow-right"></i>
-						</div>
-					</div>
-					<div class="usp col-md-6">
-						<div class="content">
-							<h3>Sveriges bästa!</h3>
-
-							<div class="text">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
-									numquam.</p>
-
-								<img src="/trophy.png" class="trophy">
-							</div>
-
-							<i class="fa-solid fa-arrow-right"></i>
-						</div>
+		<div id="home-page" class="hide">
+			<section id="hero">
+				<div class="container">
+					<div class="cta-box p-4 m-4">
+						<h1>Hittat ett träd som är farligt?</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
+							exnatusnihil a consequatur.</p>
+						<button type="button" class="cta-btn btn">Orosanmälan</button>
+						<img src="/trees.png" alt="simple illustration of trees" class="trees">
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+
+			<section id="about-section">
+				<img src="/left-vine.png" alt="left-vine" id="left-vine">
+				<img src="/right-vine.png" alt="right-vine" id="right-vine">
+				<h2 class="about-title">Om MSB</h2>
+
+				<div class="container">
+					<div class="row gy-4" id="usps">
+						<div class="usp col-md-6">
+							<div class="content">
+								<h3>Vi har nöja kunder</h3>
+
+								<div class="text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+										numquam.</p>
+
+									<img src="/thumbs-up.png">
+								</div>
+
+								<i class="fa-solid fa-arrow-right"></i>
+							</div>
+						</div>
+						<div class="usp col-md-6">
+							<div class="content reverse-content">
+								<h3>Ge din åsikt</h3>
+
+								<div class="text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+										numquam.</p>
+
+									<img src="/thumbs-down.png">
+								</div>
+
+								<i class="fa-solid fa-arrow-right"></i>
+							</div>
+						</div>
+						<div class="usp col-md-6">
+							<div class="content">
+								<h3>Sveriges bästa!</h3>
+
+								<div class="text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur quos
+										numquam.</p>
+
+									<img src="/trophy.png" class="trophy">
+								</div>
+
+								<i class="fa-solid fa-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div id="report">
+			<section id="report-section">
+				<h2>Orosanmälan</h2>
+
+				<form id="info-form">
+					<label for="city">Stad</label>
+					<input type="text" id="city" name="city">
+
+					<label for="address">Adress</label>
+					<input type="text" id="address" name="address">
+
+					<label for="first-name">Förnamn</label>
+					<input type="text" id="first-name" name="first-name">
+
+					<label for="last-name">Efternamn</label>
+					<input type="text" id="last-name" name="last-name">
+
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email">
+
+					<label for="mobile">Telefon</label>
+					<input type="text" id="mobile" name="mobile">
+
+					<label for="description">Beskriv händelsen</label>
+					<input type="text" id="description" name="description">
+
+					<button type="submit" id="send-form-btn">Skicka</button>
+				</form>
+			</section>
+		</div>
 	</main>
 
 	<footer>

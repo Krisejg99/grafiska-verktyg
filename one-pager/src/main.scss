@@ -24,6 +24,17 @@ a {
 	text-decoration: none;
 }
 
+button {
+	border: none;
+	border-radius: 10rem;
+	padding: 0.5rem 1.5rem;
+	font-weight: 500;
+}
+
+.hide {
+	display: none;
+}
+
 #hero {
 	background: url('/trees-path.png');
 	background-size: cover;
@@ -40,13 +51,8 @@ a {
 		position: relative;
 
 		.cta-btn {
-			width: 8rem;
-			height: 2.5rem;
-			border: none;
-			border-radius: 10rem;
 			background-color: #CC0000;
 			color: white;
-			font-weight: 500;
 		}
 
 		.trees {
@@ -67,12 +73,21 @@ a {
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem 3rem 0 1rem;
+		padding: 1.5rem 3rem 0 1rem;
+		margin-bottom: 1rem;
 		position: relative;
+
+		h3 {
+			margin: 0;
+		}
 
 		.text {
 			font-size: smaller;
 			display: flex;
+
+			p {
+				margin: 1rem 0 1.5rem 0;
+			}
 		}
 
 		img {
@@ -83,6 +98,7 @@ a {
 			margin: 0 0 0 1rem;
 			align-self: flex-end;
 			bottom: 0;
+			// position: absolute;
 		}
 
 		.trophy {
@@ -142,7 +158,6 @@ a {
 footer {
 	width: 100%;
 	background-color: $gray-msb-20;
-	margin: 2rem 0 0 0;
 	padding: 3rem 1.5rem 1.5rem 1.5rem;
 	display: flex;
 	text-align: center;
@@ -167,7 +182,7 @@ footer {
 
 #about-section {
 	position: relative;
-	padding-top: 4rem;
+	padding: 4rem 0 4rem 0;
 
 	#left-vine {
 		position: absolute;
@@ -186,5 +201,42 @@ footer {
 	.about-title {
 		text-align: center;
 		margin-bottom: 3rem;
+	}
+}
+
+#report {
+	#report-section {
+		width: 100%;
+		background: $gray-msb-20;
+		border-bottom: 1px solid $gray-msb-80;
+		padding: 4rem 2rem 4rem 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		#info-form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			label {
+				display: block;
+				align-self: flex-start;
+				margin-left: 0.5rem;
+			}
+
+			input {
+				border: none;
+				border-radius: 0.5rem;
+				margin-bottom: 1rem;
+			}
+
+			#send-form-btn {
+				align-self: flex-end;
+				background-color: #822757;
+				color: white;
+			}
+		}
 	}
 }
