@@ -31,17 +31,13 @@ button {
 	font-weight: 500;
 }
 
-.hide {
-	display: none;
-}
-
 .hero {
 	background: url('/broken-tree.png');
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
 	color: white;
-	height: 40rem;
+	height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -76,6 +72,11 @@ button {
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
+
+	#home-page-btn {
+		background-color: $purple-msb;
+		color: white;
+	}
 }
 
 .usp {
@@ -120,7 +121,7 @@ button {
 		}
 
 		.fa-arrow-right {
-			color: #CC0000;
+			color: $red-msb;
 			font-size: 1.5rem;
 			position: absolute;
 			right: 1rem;
@@ -189,6 +190,12 @@ footer {
 		text-decoration: underline;
 	}
 
+	.social-media {
+		i {
+			font-size: 1.5rem;
+		}
+	}
+
 	.footer-brand {
 		align-self: flex-start;
 	}
@@ -218,76 +225,83 @@ footer {
 	}
 }
 
-#report {
-	width: 100%;
-	background: $gray-msb-20;
-	border-bottom: 1px solid $gray-msb-80;
-	display: flex;
-	justify-content: center;
+#report-container {
+	position: relative;
 
-	#report-section {
+	#report {
 		width: 100%;
-		padding: 4rem 0 4rem 0;
-		max-width: 400px;
+		background: $gray-msb-20;
+		border-bottom: 1px solid $gray-msb-80;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		position: relative;
 
-		#info-form {
+		#report-section {
+			width: 100%;
+			padding: 4rem 0 4rem 0;
+			max-width: 400px;
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
-			width: 70%;
-			max-width: 400px;
+			position: relative;
 
-			label {
-				display: block;
-				align-self: flex-start;
-				margin-left: 0.5rem;
-			}
-
-			input {
-				border: none;
-				border-radius: 0.5rem;
-				margin-bottom: 1rem;
-				width: 100%;
-				padding: 0.3rem 1rem;
-			}
-
-			.double-input {
-				width: 100%;
+			#info-form {
 				display: flex;
-				justify-content: space-between;
+				flex-direction: column;
+				align-items: center;
+				width: 70%;
+				max-width: 400px;
 
-				.content {
-					width: 49%;
+				label {
+					display: block;
+					align-self: flex-start;
+					margin-left: 0.5rem;
+				}
+
+				input, textarea {
+					border: none;
+					border-radius: 0.5rem;
+					margin-bottom: 1rem;
+					width: 100%;
+					padding: 0.3rem 1rem;
+				}
+
+				.double-input {
+					width: 100%;
 					display: flex;
-					flex-direction: column;
+					justify-content: space-between;
+
+					.content {
+						width: 49%;
+						display: flex;
+						flex-direction: column;
+					}
+				}
+
+				#send-form-btn {
+					align-self: flex-end;
+					background-color: $purple-msb;
+					color: white;
 				}
 			}
 
-			.more-input {
-				height: 7rem;
+			h2 {
+				margin-bottom: 2rem;
 			}
 
-			#send-form-btn {
-				align-self: flex-end;
-				background-color: #822757;
-				color: white;
+			#trees {
+				position: absolute;
+				left: 0.5rem;
+				bottom: 0;
 			}
 		}
+	}
 
-		h2 {
-			margin-bottom: 2rem;
-		}
-
-		#trees {
-			position: absolute;
-			left: 0.5rem;
-			bottom: 0;
-		}
+	#green-vine {
+		position: absolute;
+		right: 0rem;
+		top: 0;
+		width: 120px;
 	}
 }
 
@@ -296,4 +310,8 @@ footer {
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
+}
+
+.hide {
+	display: none;
 }

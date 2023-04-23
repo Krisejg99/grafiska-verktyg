@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	<!-- header -->
 	<nav class="navbar navbar-expand-md">
 		<div class="container px-4 py-2">
 			<a class="navbar-brand" href="#">
@@ -28,7 +29,8 @@
 	</nav>
 
 	<main>
-		<div id="home-page">
+		<div id="home-page" class="">
+			<!-- Banner -->
 			<section class="hero">
 				<div class="cta-box m-5">
 					<h1>Hittat ett träd som är farligt?</h1>
@@ -39,6 +41,7 @@
 				</div>
 			</section>
 
+			<!-- About MSB -->
 			<section id="about-section">
 				<img src="/left-vine.png" alt="left-vine" id="left-vine">
 				<img src="/right-vine.png" alt="right-vine" id="right-vine">
@@ -93,58 +96,65 @@
 			</section>
 		</div>
 
-		<div id="report" class="hide">
-			<section id="report-section">
-				<h2>Orosanmälan</h2>
+		<!-- Orosanmälan (hidden) -->
+		<div id="report-container" class="hide">
+			<div id="report">
+				<img src="green-vine.png" alt="vine" id="green-vine">
 
-				<form id="info-form">
-					<label for="city">Stad</label>
-					<input type="text" id="city" name="city">
+				<section id="report-section">
+					<h2>Orosanmälan</h2>
 
-					<label for="address">Adress</label>
-					<input type="text" id="address" name="address">
+					<form id="info-form">
+						<label for="city">Stad</label>
+						<input type="text" id="city" name="city">
 
-					<div class="double-input">
-						<div class="content">
-							<label for="first-name">Förnamn</label>
-							<input type="text" id="first-name" name="first-name">
+						<label for="address">Adress</label>
+						<input type="text" id="address" name="address">
+
+						<div class="double-input">
+							<div class="content">
+								<label for="first-name">Förnamn</label>
+								<input type="text" id="first-name" name="first-name">
+							</div>
+
+							<div class="content">
+								<label for="last-name">Efternamn</label>
+								<input type="text" id="last-name" name="last-name">
+							</div>
 						</div>
 
-						<div class="content">
-							<label for="last-name">Efternamn</label>
-							<input type="text" id="last-name" name="last-name">
-						</div>
-					</div>
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email">
 
-					<label for="email">Email</label>
-					<input type="text" id="email" name="email">
+						<label for="mobile">Telefon</label>
+						<input type="text" id="mobile" name="mobile">
 
-					<label for="mobile">Telefon</label>
-					<input type="text" id="mobile" name="mobile">
+						<label for="description">Beskriv händelsen</label>
+						<textarea name="description" id="description" cols="30" rows="4"></textarea>
 
-					<label for="description">Beskriv händelsen</label>
-					<input type="text" id="description" name="description" class="more-input">
+						<button type="button" id="send-form-btn">Skicka</button>
+					</form>
 
-					<button type="button" id="send-form-btn">Skicka</button>
-				</form>
-
-				<img src="/trees.png" alt="simple illustration of trees" class="trees" id="trees">
-			</section>
+					<img src="/trees.png" alt="simple illustration of trees" class="trees" id="trees">
+				</section>
+			</div>
 		</div>
 
+		<!-- Tack för din anmälan (hidden) -->
 		<div id="after-report" class="hide">
 			<section class="hero report-hero">
 				<div class="cta-box m-5">
 					<h1>Tack för din anmälan</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
 						exnatusnihil a consequatur.</p>
-					<button type="button" id="report-tree-btn">Startsida</button>
+					<button type="button" id="home-page-btn">Startsida</button>
 					<img src="/trees.png" alt="simple illustration of trees" id="trees">
 				</div>
 			</section>
 		</div>
 	</main>
 
+	<!-- footer -->
 	<footer>
 		<section class="row">
 			<div class="contact col-md-5 col-lg 3 content">
@@ -161,7 +171,7 @@
 			</div>
 
 			<div class="social-media col-md-5 col-lg 3 content">
-				<h3>Kontakta MSB</h3>
+				<h3>Social Media</h3>
 				<a href="#">
 					<i class="fa-brands fa-facebook-f"></i>
 				</a>
