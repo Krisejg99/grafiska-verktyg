@@ -13,7 +13,7 @@ h2, h3, h4 {
 	font-size: 1.4rem;
 }
 
-p {
+p, label {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
@@ -35,33 +35,47 @@ button {
 	display: none;
 }
 
-#hero {
-	background: url('/trees-path.png');
+.hero {
+	background: url('/broken-tree.png');
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
 	color: white;
-	// height: 40rem;
+	height: 40rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	.cta-box {
-		background: linear-gradient(#6F6E67d2 0%, #6f6e67d2 100%);
+		background: linear-gradient(#6f6e67e6 0%, #6f6e67e6 100%);
 		position: relative;
+		max-width: 500px;
+		padding: 1.6rem 2rem 1.8rem 2rem;
 
-		.cta-btn {
+
+		p {
+			margin: 1rem 0 1.5rem 0;
+		}
+
+		#report-tree-btn {
 			background-color: #CC0000;
 			color: white;
 		}
 
-		.trees {
+		#trees {
 			position: absolute;
 			right: 1rem;
-			bottom: 0.3rem;
+			bottom: 0.2rem;
 			height: 5rem;
 		}
 	}
+}
+
+.report-hero {
+	background: url('/healthy-tree.png');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
 }
 
 .usp {
@@ -205,20 +219,28 @@ footer {
 }
 
 #report {
+	width: 100%;
+	background: $gray-msb-20;
+	border-bottom: 1px solid $gray-msb-80;
+	display: flex;
+	justify-content: center;
+
 	#report-section {
 		width: 100%;
-		background: $gray-msb-20;
-		border-bottom: 1px solid $gray-msb-80;
-		padding: 4rem 2rem 4rem 2rem;
+		padding: 4rem 0 4rem 0;
+		max-width: 400px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 
 		#info-form {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			width: 70%;
+			max-width: 400px;
 
 			label {
 				display: block;
@@ -230,6 +252,24 @@ footer {
 				border: none;
 				border-radius: 0.5rem;
 				margin-bottom: 1rem;
+				width: 100%;
+				padding: 0.3rem 1rem;
+			}
+
+			.double-input {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.content {
+					width: 49%;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+
+			.more-input {
+				height: 7rem;
 			}
 
 			#send-form-btn {
@@ -238,5 +278,22 @@ footer {
 				color: white;
 			}
 		}
+
+		h2 {
+			margin-bottom: 2rem;
+		}
+
+		#trees {
+			position: absolute;
+			left: 0.5rem;
+			bottom: 0;
+		}
 	}
+}
+
+#after-report {
+	background: url('/trees-path.png');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
 }

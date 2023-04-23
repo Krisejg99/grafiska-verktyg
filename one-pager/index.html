@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 	<nav class="navbar navbar-expand-md">
 		<div class="container px-4 py-2">
 			<a class="navbar-brand" href="#">
@@ -25,34 +24,18 @@
 			</div>
 
 			<i class="fa-solid fa-bars"></i>
-
-			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ms-auto">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-					<a class="nav-link" href="#features">Features</a>
-					<a class="nav-link" href="#pricing">Pricing</a>
-					<a class="nav-link disabled" href="#disabled">Disabled</a>
-				</div>
-			</div> -->
 		</div>
 	</nav>
 
 	<main>
-		<div id="home-page" class="hide">
-			<section id="hero">
-				<div class="container">
-					<div class="cta-box p-4 m-4">
-						<h1>Hittat ett träd som är farligt?</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
-							exnatusnihil a consequatur.</p>
-						<button type="button" class="cta-btn btn">Orosanmälan</button>
-						<img src="/trees.png" alt="simple illustration of trees" class="trees">
-					</div>
+		<div id="home-page">
+			<section class="hero">
+				<div class="cta-box m-5">
+					<h1>Hittat ett träd som är farligt?</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
+						exnatusnihil a consequatur.</p>
+					<button type="button" id="report-tree-btn">Orosanmälan</button>
+					<img src="/trees.png" alt="simple illustration of trees" id="trees">
 				</div>
 			</section>
 
@@ -110,7 +93,7 @@
 			</section>
 		</div>
 
-		<div id="report">
+		<div id="report" class="hide">
 			<section id="report-section">
 				<h2>Orosanmälan</h2>
 
@@ -121,11 +104,17 @@
 					<label for="address">Adress</label>
 					<input type="text" id="address" name="address">
 
-					<label for="first-name">Förnamn</label>
-					<input type="text" id="first-name" name="first-name">
+					<div class="double-input">
+						<div class="content">
+							<label for="first-name">Förnamn</label>
+							<input type="text" id="first-name" name="first-name">
+						</div>
 
-					<label for="last-name">Efternamn</label>
-					<input type="text" id="last-name" name="last-name">
+						<div class="content">
+							<label for="last-name">Efternamn</label>
+							<input type="text" id="last-name" name="last-name">
+						</div>
+					</div>
 
 					<label for="email">Email</label>
 					<input type="text" id="email" name="email">
@@ -134,10 +123,24 @@
 					<input type="text" id="mobile" name="mobile">
 
 					<label for="description">Beskriv händelsen</label>
-					<input type="text" id="description" name="description">
+					<input type="text" id="description" name="description" class="more-input">
 
-					<button type="submit" id="send-form-btn">Skicka</button>
+					<button type="button" id="send-form-btn">Skicka</button>
 				</form>
+
+				<img src="/trees.png" alt="simple illustration of trees" class="trees" id="trees">
+			</section>
+		</div>
+
+		<div id="after-report" class="hide">
+			<section class="hero report-hero">
+				<div class="cta-box m-5">
+					<h1>Tack för din anmälan</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic necessitatibus,
+						exnatusnihil a consequatur.</p>
+					<button type="button" id="report-tree-btn">Startsida</button>
+					<img src="/trees.png" alt="simple illustration of trees" id="trees">
+				</div>
 			</section>
 		</div>
 	</main>
